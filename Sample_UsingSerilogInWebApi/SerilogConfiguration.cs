@@ -5,7 +5,7 @@ namespace Sample_UsingSerilogInWebApi
 {
     public static class SerilogConfiguration
     {
-        public static void Initial(WebApplicationBuilder builder)
+        public static void Initialize(WebApplicationBuilder builder)
         {
             var configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
