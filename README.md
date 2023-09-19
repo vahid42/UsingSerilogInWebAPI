@@ -11,13 +11,11 @@
 In this class, Reading the appsettings.json, Create a Create Logger and Use the UseSerilog is defined
 
  //Reading the appsettings.json
+ 
   var configuration = new ConfigurationBuilder()
-  
-                    .SetBasePath(Directory.GetCurrentDirectory())
-                    
-                   .AddJsonFile("appsettings.json")
-                   
-                        .Build();
+                      .SetBasePath(Directory.GetCurrentDirectory())
+                                       .AddJsonFile("appsettings.json")
+                                           .Build();
  //CreateLogger                      
  Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
