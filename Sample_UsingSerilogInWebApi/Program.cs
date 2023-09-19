@@ -15,7 +15,7 @@ namespace Sample_UsingSerilogInWebApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            SerilogConfiguration.Initial(builder);
+            SerilogConfiguration.Initialize(builder);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
