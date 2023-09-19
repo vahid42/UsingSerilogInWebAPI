@@ -65,8 +65,10 @@ builder.Host.UseSerilog();
 }
 
 ```
-
-
+# 4 :Add Class Serilog Configuration and Call Initialize Method in Program.cs
+```
+SerilogConfiguration.Initialize(builder);
+```
 
 
 
